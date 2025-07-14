@@ -16,6 +16,7 @@ jobs:
         env:
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
+          WEBHOOK_URL : ${{ secrets.WEBHOOK_URL }}
       - uses: actions/upload-artifact@v4
         with:
           path: recording.webm
